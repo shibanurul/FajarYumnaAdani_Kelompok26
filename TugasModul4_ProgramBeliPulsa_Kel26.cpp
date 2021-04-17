@@ -1,6 +1,31 @@
 #include <iostream>
 using namespace std;
 
+int pilih_pulsa
+
+class Method {
+public:
+
+void daftar_pulsa() {
+cin >> pilih_pulsa;
+	}
+	
+void last() {
+		daftar_pulsa();
+		if (pilihan_pulsa() == 0) {
+			cout << "\n   Maaf INPUT yang Anda lakukan salah!!!" << endl;
+		}
+		else {
+			cout << "\n   Akan dilakukan pengisian pulsa ";
+			nama_isp();
+			cout << "\n   Dengan nominal sebesar Rp " << pilihan_pulsa() << endl;
+			cout << "   Untuk nomor tujuan " << no_telp << endl;
+			cout << "   ---------------------------------------" << endl;
+			cout << "   TOTAL PEMBAYARAN : Rp" << pilihan_pulsa() + 2000 << endl;
+		}
+	}
+};
+
 int main(){
 	
 	char pilih;
@@ -21,7 +46,7 @@ int main(){
 		cout << "   2 <---Indosat           4 <---Smartfren " << endl;
 		cout << "   ---------------------------------------" << endl;
 		cout << "   Masukkan pilihan operator(1-4): ";
-		cin >> isp;                                   // isp = internet service provider
+		cin >> isp;
 		cout << "   Masukan nomor telepon Anda : ";
 		cin >> no_telp;
 		if (isp == 1 || isp == 2 || isp == 3 || isp == 4){
