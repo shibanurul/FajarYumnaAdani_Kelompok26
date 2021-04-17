@@ -21,7 +21,7 @@ int main(){
 		cout << "   2 <---Indosat           4 <---Smartfren " << endl;
 		cout << "   ---------------------------------------" << endl;
 		cout << "   Masukkan pilihan operator(1-4): ";
-		cin >> isp;
+		cin >> isp;                                   // isp = internet service provider
 		cout << "   Masukan nomor telepon Anda : ";
 		cin >> no_telp;
 		if (isp == 1 || isp == 2 || isp == 3 || isp == 4){
