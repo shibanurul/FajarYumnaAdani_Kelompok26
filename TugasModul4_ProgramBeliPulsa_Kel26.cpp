@@ -3,6 +3,7 @@ using namespace std;
 
 int main(){
 	
+	char pilih;
 	int isp, no_telp;
 	
 	cout << " Kelompok 26 \n";
@@ -14,21 +15,23 @@ int main(){
 	cout << "\n ============== SELAMAT DATANG ==============" << endl;
 	cout << "     DI APLIKASI PEMBELIAN PULSA METRO CELL  " << endl;
 	
-	cout << "\n   ============ DAFTAR OPERATOR ===========" << endl;
-	cout << "   1 <---Telkomsel         3 <---XL " << endl;
-	cout << "   2 <---Indosat           4 <---Smartfren " << endl;
-	cout << "   ---------------------------------------" << endl;
-	cout << "   Masukkan pilihan operator(1-4): ";
-	cin >> isp;
-	cout << "   Masukan nomor telepon Anda : ";
-	cin >> no_telp;
-	if (isp == 1 || isp == 2 || isp == 3 || isp == 4){
+	do {
+		cout << "\n   ============ DAFTAR OPERATOR ===========" << endl;
+		cout << "   1 <---Telkomsel         3 <---XL " << endl;
+		cout << "   2 <---Indosat           4 <---Smartfren " << endl;
+		cout << "   ---------------------------------------" << endl;
+		cout << "   Masukkan pilihan operator(1-4): ";
+		cin >> isp;
+		cout << "   Masukan nomor telepon Anda : ";
+		cin >> no_telp;
+		if (isp == 1 || isp == 2 || isp == 3 || isp == 4){
 		
-	}else {
+		}else {
 	
-	}	
-	cout << "\n   Apakah ingin membeli pulsa lagi(y/n): ";
-	
+		}	
+		cout << "\n   Apakah ingin membeli pulsa lagi(y/n): ";
+		cin >> pilih;
+	}while(pilih== 'y');
 	cin.get();
 	return 0;
 }
