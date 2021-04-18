@@ -1,13 +1,38 @@
 #include <iostream>
 using namespace std;
 
-int pilih_pulsa
+int pilih_pulsa;
 
 class Method {
 public:
 
 void daftar_pulsa() {
-cin >> pilih_pulsa;
+ 		cout << "\n   Silahkan pilih nominal pengisian " << endl;
+        cout << "   1 <---10.000           3 <---50.000" << endl;
+		cout << "   2 <---20.000           4 <---100.000" << endl;
+        cout << "   Masukkan pilihan Anda(1-4): ";
+		cin >> pilih_pulsa;
+	}
+	
+int pilihan_pulsa(){
+    	switch (pilih_pulsa){
+    		case 1 :
+    			pulsa = 10000;
+    			break;
+    		case 2 :
+    			pulsa = 20000;
+    			break;
+    		case 3 :
+    			pulsa = 50000;
+    			break;
+    		case 4 :
+    			pulsa = 100000;
+    			break;
+    		default :
+    			pulsa = 0;
+    			break;
+		} 
+		return pulsa;
 	}
 	
 void last() {
@@ -57,6 +82,10 @@ int main(){
 		cout << "\n   Apakah ingin membeli pulsa lagi(y/n): ";
 		cin >> pilih;
 	}while(pilih== 'y');
+	
+	cout << "\n        SILAHKAN LAKUKAN PEMBAYARAN " << endl;
+	cout << " ============== TERIMA KASIH ==============" << endl;
+	
 	cin.get();
 	return 0;
 }
